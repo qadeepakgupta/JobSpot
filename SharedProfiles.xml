@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Profile Access Suite" parallel="classes"
+	thread-count="1">
+	<test name="Regression Testing">
+		<classes>
+			<class
+				name="com.test.automation.jobspot.sharedProfilePage.TC001_VerifyPrivateAccess" />
+			<class
+				name="com.test.automation.jobspot.sharedProfilePage.TC002_VerifyPublicAccess" />
+			<class
+				name="com.test.automation.jobspot.sharedProfilePage.TC003_VerifyRestrictedAccess" />
+			<class
+				name="com.test.automation.jobspot.sharedProfilePage.TC004_VerifyProfileDoesNotExist" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

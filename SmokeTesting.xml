@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Testing Suite">
+
+
+
+	<test name="Test Case - Sign Up Module">
+		<classes>
+			<class
+				name="com.test.automation.jobspot.signupPage.TC001_VerifySignUpBlankSubmit" />
+			<class
+				name="com.test.automation.jobspot.signupPage.TC002_VerifyValidSignUp" />
+		</classes>
+	</test>
+
+
+	<test name="Test Case - Login Module">
+		<classes>
+			<class
+				name="com.test.automation.jobspot.loginPage.TC001_VerifyLoginWithInvalidCredentails" />
+			<class
+				name="com.test.automation.jobspot.loginPage.TC003_VerifyLoginLogout" />
+		</classes>
+	</test>
+
+
+	<test name="Test Case - Forget Password Module">
+		<classes>
+
+			<class
+				name="com.test.automation.jobspot.forgetPasswordPage.TC001_VerifyForgetPasswordBlankSubmit" />
+			<class
+				name="com.test.automation.jobspot.forgetPasswordPage.TC002_VerifyValidForgetPassword" />
+
+		</classes>
+	</test>
+
+
+
+
+
+	<test name="Test Case - All Shared Profile Module">
+		<classes>
+			<class
+				name="com.test.automation.jobspot.sharedProfilePage.TC001_VerifyPrivateAccess" />
+			<class
+				name="com.test.automation.jobspot.sharedProfilePage.TC002_VerifyPublicAccess" />
+			<class
+				name="com.test.automation.jobspot.sharedProfilePage.TC003_VerifyRestrictedAccess" />
+			<class
+				name="com.test.automation.jobspot.sharedProfilePage.TC004_VerifyProfileDoesNotExist" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
